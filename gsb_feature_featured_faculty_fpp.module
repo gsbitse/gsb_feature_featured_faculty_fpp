@@ -1,11 +1,10 @@
 <?php
-
 /**
  * @file
  * Code for the GSB Feature Featured Faculty FPP feature.
  */
 
-include_once 'gsb_feature_featured_faculty_fpp.features.field_instance.inc';
+include_once 'gsb_feature_featured_faculty_fpp.features.inc';
 
 /**
  * Implements hook_entity_alter().
