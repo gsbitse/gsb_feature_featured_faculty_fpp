@@ -1,0 +1,17 @@
+name = GSB Feature Featured Faculty FPP
+description = The feature for creating the Featured Faculty FPP
+core = 7.x
+package = GSB
+version = 7.x-1.0
+project = gsb_feature_featured_faculty_fpp
+dependencies[] = ctools
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = gsb_feature_base_fields
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_instance][] = fieldable_panels_pane-featured-faculty-field_faculty_ref
+features[variable][] = field_bundle_settings_fieldable_panels_pane__featured_faculty
+
+

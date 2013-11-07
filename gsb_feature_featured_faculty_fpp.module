@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Code for the GSB Feature Featured Faculty FPP feature.
+ */
+
+include_once 'gsb_feature_featured_faculty_fpp.features.field_instance.inc';
+
+/**
+ * Implements hook_entity_alter().
+ */
+function gsb_feature_featured_faculty_fpp_entity_info_alter(&$entity_info) {
+  $entity_info['fieldable_panels_pane']['bundles']['featured_faculty'] = array(
+    'label' => t('Featured Faculty'),
+    'pane category' => t('GSB panes'),
+    'pane top level' => TRUE, // set to true to make this show as a top level icon
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/featured-faculty',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
