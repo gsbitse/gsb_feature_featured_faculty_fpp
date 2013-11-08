@@ -51,7 +51,7 @@ function gsb_feature_featured_faculty_fpp_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => -3,
     ),
     'workbench_access_field' => 0,
   );
@@ -93,7 +93,7 @@ function gsb_feature_featured_faculty_fpp_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_onoff',
-      'weight' => 5,
+      'weight' => -1,
     ),
     'workbench_access_field' => 0,
   );
@@ -135,7 +135,7 @@ function gsb_feature_featured_faculty_fpp_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_onoff',
-      'weight' => 4,
+      'weight' => -2,
     ),
     'workbench_access_field' => 0,
   );
@@ -176,7 +176,7 @@ function gsb_feature_featured_faculty_fpp_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 2,
+      'weight' => -4,
     ),
     'workbench_access_field' => 0,
   );
@@ -220,7 +220,7 @@ function gsb_feature_featured_faculty_fpp_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => -5,
     ),
     'workbench_access_field' => 0,
   );
